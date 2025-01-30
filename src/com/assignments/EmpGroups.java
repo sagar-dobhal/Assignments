@@ -4,17 +4,29 @@ public class EmpGroups extends Employees{
 
 	
 	public static void main(String[] args) {
+		
+		//Create object of Employees class
+		
+		Employees emp =  new Employees();
 	
+		//Creating array for Employees Name
 		String []empName1 = new String[3];
-		empName1[0]= empName[0];
-		empName1[1]= empName[1];
-		empName1[2]= empName[2];
+		empName1[0]= emp.employee1;
+		empName1[1]= emp.employee2;
+		empName1[2]= emp.employee3;
+		
+		//OR String []empName1 = {emp.employee1,emp.employee2,emp.employee3};
+		
+//---------------------------------------------------------------------------------------------------	    
 	
+		//Creating array for Employees ID
 	     int []empID2 = new int[3];
 	
-	    empID2[0]= empID[0];
-		empID2[1]= empID[1];
-		empID2[2]= empID[2];
+	    empID2[0]= emp.employeeID1;
+		empID2[1]= emp.employeeID2;
+		empID2[2]= emp.employeeID3;
+		
+		//OR -  int []empID2 = {emp.employeeID1,emp.employeeID2,emp.employeeID3};
 		
 		
 		System.out.println("Employee Name:"+empName1[0]+","+"Employee ID:"+empID2[0]);
